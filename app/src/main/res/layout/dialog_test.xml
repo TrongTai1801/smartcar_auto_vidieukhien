@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:id="@+id/llTest"
+        android:layout_below="@id/btnDown"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+
+        >
+        <Button
+            android:layout_gravity="center"
+            android:id="@+id/btnGoAhead"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Go Ahead"
+            android:layout_marginTop="50dp"/>
+        <Button
+            android:layout_gravity="center"
+            android:id="@+id/btnBackWard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="BackWard"
+            />
+
+        <Button
+            android:layout_gravity="center"
+            android:id="@+id/btnTurnLeft"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Turn Left"
+            />
+
+
+
+        <Button
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnTurnRight"
+            android:text="Turn Right"
+            />
+        <Spinner
+            android:id="@+id/spnSoDo"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"/>
+        <EditText
+            android:id="@+id/edtMaSat"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:phoneNumber="true"
+            android:text="2"
+
+            />
+        <Button
+            android:id="@+id/btnMasat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Time Delay"
+            android:layout_gravity="center"/>
+    </LinearLayout>
+</LinearLayout>

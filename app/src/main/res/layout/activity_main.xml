@@ -1,0 +1,124 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+
+    <RelativeLayout
+        android:id="@+id/rlTeamInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_marginStart="10dp"
+            android:id="@+id/ivCntt"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/cntt"/>
+        <TextView
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nhóm Thực Hiện \n \n Hà Xuân Sáng \nLê Trọng Tài \n Ngô Minh Cương"
+            android:layout_toRightOf="@id/ivCntt"/>
+
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:gravity="center"/>
+
+    <ListView
+        android:id="@+id/pairedlist"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+
+
+
+    <RelativeLayout
+        android:id="@+id/inputpane"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <Button
+            android:id="@+id/btnUp"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Up"/>
+        <Button
+            android:id="@+id/btnLeft"
+            android:layout_below="@id/btnUp"
+            android:layout_toLeftOf="@id/btnDown"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Left"
+            android:layout_marginTop="20dp"
+           />
+        <Button
+            android:id="@+id/btnDown"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/btnUp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Down"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="50dp"/>
+        <Button
+            android:layout_marginTop="20dp"
+            android:id="@+id/btnRight"
+            android:layout_below="@id/btnUp"
+            android:layout_toRightOf="@id/btnDown"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Right"
+            android:layout_marginLeft="50dp"/>
+
+        <com.andrognito.patternlockview.PatternLockView
+            android:layout_below="@id/btnDown"
+            android:id="@+id/pattern_lock_view"
+            app:dotCount="5"
+            app:dotNormalSize="@dimen/dp_12"
+            app:dotSelectedSize="@dimen/dp_24"
+            app:normalStateColor="@color/black"
+            app:correctStateColor="@color/green"
+            app:wrongStateColor="@color/red"
+            android:layout_centerInParent="true"
+            android:layout_width="@dimen/dp_300"
+            android:layout_height="@dimen/dp_300"/>
+
+        <Button
+
+            android:id="@+id/btn_address"
+            android:text="OK"
+            android:layout_marginTop="10dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/pattern_lock_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+        <Button
+            android:id="@+id/btnTest"
+            android:gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btn_address"
+            android:layout_marginTop="8dp"
+            android:layout_marginStart="65dp"
+            android:text="Test TimeDelay Theo Ma Sat"/>
+
+    </RelativeLayout>
+
+
+</LinearLayout>
+
